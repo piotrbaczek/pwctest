@@ -14,7 +14,7 @@ class TemperaturesDistanceCalculator
     private $temperatures;
 
     /** @var int $countOccurances */
-    private $countOccurances = 0;
+    private $countOccurrences = 0;
 
     /** @var int $distance */
     private $distance = PHP_INT_MAX;
@@ -53,12 +53,12 @@ class TemperaturesDistanceCalculator
 
             if ($temperatureDistance < $this->distance) {
                 $this->distance = $temperatureDistance;
-                $this->countOccurances = 1;
+                $this->countOccurrences = 1;
                 continue;
             }
 
             if ($temperatureDistance === $this->distance) {
-                $this->countOccurances++;
+                $this->countOccurrences++;
             }
         }
     }
@@ -76,9 +76,9 @@ class TemperaturesDistanceCalculator
     /**
      * @return int
      */
-    public function getCountOccurances(): int
+    public function getCountOccurrences(): int
     {
-        return $this->countOccurances;
+        return $this->countOccurrences;
     }
 
     /**
