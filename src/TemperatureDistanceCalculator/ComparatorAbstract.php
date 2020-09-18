@@ -11,7 +11,7 @@ abstract class ComparatorAbstract
     /**
      * Function comparing the temperature to
      * @param float $temperature
-     * @return int
+     * @return float
      */
-    abstract public static function compare(float $temperature): int;
+    abstract public static function compare(float $temperature): float;
 }

@@ -10,10 +10,10 @@ class ClosestZeroComparator extends ComparatorAbstract
 {
     /**
      * @inheritDoc
-     * @param int $temperature
-     * @return int
+     * @param float $temperature
+     * @return float
      */
-    public static function compare(float $temperature): int
+    public static function compare(float $temperature): float
     {
         return abs($temperature);
     }
